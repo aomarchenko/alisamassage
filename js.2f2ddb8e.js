@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/header-image.webp":[["header-image.629ff717.webp","rHL9"],"rHL9"]}],"QvaY":[function(require,module,exports) {
 "use strict";require("../sass/main.scss");
 },{"../sass/main.scss":"clu1"}]},{},["QvaY"], null)
-//# sourceMappingURL=/alisamassage/js.a30acf53.js.map
+//# sourceMappingURL=/alisamassage/js.2f2ddb8e.js.map
