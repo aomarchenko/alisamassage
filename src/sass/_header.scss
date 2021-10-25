@@ -33,9 +33,8 @@
   position: relative;
   padding: 10px;
 }
-// .current {
-// }
-.nav-link .current::after {
+
+.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -43,7 +42,7 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: orange;
+  background-color: rgba(230, 109, 10, 0.897);
 }
 .main-nav {
   text-align: center;
@@ -55,6 +54,7 @@
   height: 80px;
   width: 300px;
   background: rgba(230, 109, 10, 0.897);
+
   border-color: transparent;
   border-radius: 7px;
   color: #ffffff;
