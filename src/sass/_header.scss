@@ -2,18 +2,25 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+ul {
+  padding: 0;
+}
 .header {
-  background-image: url('../images/header-image.webp');
-  background-size: contain;
+  background-image: url('../images/BW_Summer_Homepage_lp_v2.jpeg');
+  background-size: cover;
   width: 100%;
   margin: 0 auto;
   min-height: 700px;
-  background-size: cover;
+
   background-repeat: no-repeat;
   position: relative;
 }
 .nav-list {
+  :not(:first-child) {
+    margin-left: 30px;
+  }
   margin: 0 auto;
+  padding: 40px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -24,7 +31,7 @@ a {
   width: 100%;
 
   color: #ffffff;
-  font-size: 20px;
+  font-size: 15px;
   position: fixed;
   z-index: 99;
 }
@@ -33,9 +40,8 @@ a {
 }
 
 .nav-link {
-  margin-left: 50px;
   position: relative;
-  padding: 10px;
+  padding: 0px;
 }
 
 .current::after {
@@ -53,10 +59,10 @@ a {
 }
 .header-button {
   position: absolute;
-  left: 50%;
-  top: 75%;
-  height: 80px;
-  width: 300px;
+  left: calc(50% - 100px);
+  top: 70%;
+  height: 60px;
+  width: 200px;
   background: rgba(230, 109, 10, 0.897);
 
   border-color: transparent;
@@ -69,14 +75,14 @@ a {
 }
 .logo {
   position: absolute;
-  top: 40%;
-  left: 70%;
+  top: 150px;
+  left: 50px;
   font-family: 'Great Vibes', cursive;
-  font-size: 50px;
+  font-size: 30px;
 }
 .alisa {
   display: block;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Great Vibes', cursive;
   text-align: center;
 }
