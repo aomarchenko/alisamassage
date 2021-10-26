@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 150px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+}
+.footer-logo {
+  position: absolute;
+  left: calc(50% - 70px);
+  height: 80px;
+  width: 140px;
+  margin: 15px 0;
+  border-radius: 50%;
+}
+.footer-title {
+  position: absolute;
+  margin-top: 105px;
+  left: calc(50% - 180px);
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  color: white;
+}
