@@ -6,7 +6,7 @@ ul {
   padding: 0;
 }
 .header {
-  background-image: url('../images/BW_Summer_Homepage_lp_v2.jpeg');
+  background-image: url('../images/backround.jpeg');
   background-size: cover;
   width: 100%;
   margin: 0 auto;
@@ -76,10 +76,11 @@ ul {
 .logo {
   position: absolute;
   top: 250px;
-  left: 50px;
+  left: 250px;
   font-family: 'Great Vibes', cursive;
-  font-size: 40px;
+  font-size: 50px;
   color: rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
 .alisa {
   display: block;
