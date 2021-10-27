@@ -87,6 +87,18 @@
   font-size: 20px;
   border: 1px solid rgb(216, 213, 213);
 }
+.message {
+  width: 500px;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+
+  //   &::placeholder {
+
+  //     position: absolute;
+  //     top: 5px;
+  //   }
+}
 .button__field {
   margin-top: 50px;
 }
