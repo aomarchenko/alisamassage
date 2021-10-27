@@ -12,21 +12,19 @@ homeBtn.addEventListener('click', homePageRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
-  //   console.log(e.target);
-  //   if (!e.target.classList.contains('nav-link')) {
-  //     return;
-  //   }
-  //   currentActivePage.classList.remove('current');
-  //   e.currentTarget.classList.add('current');
+  if (!e.target.classList.contains('nav-link')) {
+    return;
+  }
+
+  const links = document.querySelectorAll('.nav-link');
+  for (const link of links) {
+    link.classList.remove('current');
+  }
   e.target.classList.add('current');
-  //   e.target.classList.remove('current');
 }
 function priceListRender(e) {
-  currentPageToggle();
   e.preventDefault;
   console.log();
-
-  //   e.target.classList.toggle('current');
 
   renderContainer.innerHTML = priceList;
 }
