@@ -1,0 +1,47 @@
+<div class="appointment__backdrop is-hidden">
+  <div class="appointment__modal">
+    <button class="appointment__modal--btn-close">
+      <svg class="appointment__modal--close-svg" width="30" height="30">
+        <use href="./images/svg/close.svg"></use>
+      </svg>
+    </button>
+
+    <form class="appointment">
+      <h2 class="appointment__title">Afspraak maken</h2>
+      <p>
+        ? Hoe? Telefonisch, per e-mail of gebruik maken van het onderstaande contactformulier <br />
+
+        ? Wanneer? Op werkdagen tussen 10.00-21.00 uur<br />
+
+        ? Ik heb geen pin automaat, dus gelieve te betalen voor de dienst in contanten.<br />
+
+        ? Je 1e afspraak duur 15 minuten langer i.v.m. de kennismaking/intake
+      </p>
+      <div class="input__box">
+        <h3 class="input__name">Naam:</h3>
+        <input class="input__field name" name="namefield" type="text" placeholder="Naam:" />
+        <h3 class="input__name">Mobiel nummer:</h3>
+        <input
+          class="input__field number"
+          name="mobilefield"
+          type="text"
+          placeholder="Mobiel nummer:"
+        />
+        <h3 class="input__name">Please type your email</h3>
+        <input
+          class="input__field email"
+          name="mailfield"
+          type="text"
+          placeholder="email@email.com"
+        />
+        <h3 class="input__name">Je vraag:</h3>
+        <input class="input__field email" name="messagefield" type="text" placeholder="Je vraag:" />
+      </div>
+      <div class="button__field">
+        <button type="submit" class="appointment_modal--btn-appointment" data-action="">
+          VERSTUUR
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
