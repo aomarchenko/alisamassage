@@ -1,3 +1,39 @@
+// .page-container {
+//   position: relative;
+//   display: flex;
+//   flex-direction: row;
+//   width: 100%;
+//   margin: 0 auto;
+// }
+// .side-menu {
+//   list-style: none;
+//   display: flex;
+//   flex-direction: column;
+//   position: sticky;
+//   top: 100px;
+//   padding-left: 33px;
+// }
+// .side-menu-link {
+//   background: rgba(0, 0, 0, 0.6);
+//   list-style: none;
+//   width: 350px;
+//   color: #ffffff;
+//   margin-bottom: 5px;
+//   text-align: left;
+//   padding: 15px;
+//   font-size: 20px;
+//   border-radius: 5px;
+//   &:hover {
+//     background: rgba(0, 0, 0, 0.4);
+//   }
+// }
+// .content {
+//   display: block;
+//   font-size: 20px;
+//   padding: 25px;
+//   text-align: justify;
+// }
+
 .page-container {
   position: relative;
   display: flex;

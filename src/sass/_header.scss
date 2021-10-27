@@ -6,11 +6,11 @@ ul {
   padding: 0;
 }
 .header {
-  background-image: url('../images/backround.jpeg');
-  background-size: cover;
+  background-image: url('../images/BW_Summer_Homepage_lp_v2.jpeg');
+  background-size: contain;
   width: 100%;
   margin: 0 auto;
-  min-height: 700px;
+  min-height: 380px;
 
   background-repeat: no-repeat;
   position: relative;
@@ -59,12 +59,14 @@ ul {
 }
 .header-button {
   position: absolute;
-  left: calc(50% - 100px);
-  top: 70%;
-  height: 60px;
-  width: 200px;
+  right: 190px;
+  bottom: 40px;
+  height: 40px;
+  width: 170px;
   background: rgba(230, 109, 10, 0.897);
-
+  @media screen and (min-width: 1400px) {
+    right: 530px;
+  }
   border-color: transparent;
   border-radius: 7px;
   color: #ffffff;
@@ -75,10 +77,13 @@ ul {
 }
 .logo {
   position: absolute;
-  top: 250px;
-  left: 250px;
+  bottom: 60px;
+  right: 20px;
+  @media screen and (min-width: 1400px) {
+    right: 360px;
+  }
   font-family: 'Great Vibes', cursive;
-  font-size: 50px;
+  font-size: 40px;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
