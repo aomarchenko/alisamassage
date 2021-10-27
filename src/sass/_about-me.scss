@@ -1,0 +1,17 @@
+.cv-table {
+  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
+  border-collapse: collapse;
+  &th,
+  td {
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+  }
+  margin-bottom: 55px;
+}
+.my-photo {
+  //   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
+  border-radius: 15px;
+}
+.about-me-logo {
+  height: 100px;
+}
