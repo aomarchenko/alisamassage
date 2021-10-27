@@ -18,7 +18,7 @@ function openModal(event) {
 function closeModal() {
   body.style.overflow = 'visible';
   appointmentBacdrop.classList.add('is-hidden');
-  appointmentLink.addEventListener('click', openModal);
+
   closeappointmentBtn.removeEventListener('click', onCloseBtn);
   window.removeEventListener('keydown', onEsc);
   appointmentBacdrop.removeEventListener('click', onBackdrop);
