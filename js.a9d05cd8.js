@@ -15,4 +15,4 @@ module.exports=function(t){return fetch(t).then(function(t){return t.text()})};
 },{}],0:[function(require,module,exports) {
 var b=require("TUK3");b.register("html",require("A3BY"));b.load([["price-list.80055a70.html","dRHv"],["home.485e0c53.html","STfV"],["news.567ce659.html","ssVt"],["about-me.60a0e79b.html","QGLI"]]).then(function(){require("QvaY");});
 },{}]},{},[0], null)
-//# sourceMappingURL=/alisamassage/js.c4e5a659.js.map
+//# sourceMappingURL=/alisamassage/js.a9d05cd8.js.map
