@@ -1,11 +1,22 @@
 const appointmentBacdrop = document.querySelector('.appointment__backdrop');
 const body = document.querySelector('body');
 const closeappointmentBtn = document.querySelector('.appointment__modal--btn-close');
+const formTitle = document.querySelector('.appointment__title');
+const formPage = document.querySelector('.appointment__page');
 // const appointmentLink = document.querySelector('.js-button-appointment');
 const appointmentButton = document.querySelector('.header-button');
 const appointmentForm = document.querySelector('.appointment');
 appointmentButton.addEventListener('click', openModal);
+
+const buynowBtn = document.querySelector('.content');
+buynowBtn.addEventListener('click', openModal);
+
 function openModal(event) {
+  if (event.target.classList.contains('js-buy-now-btn')) {
+    formTitle.textContent = 'Cadeaubon';
+    formPage.textContent = 'Bedrag 15. 25. 35. 50. 100. EUR:';
+  }
+
   event.preventDefault();
   appointmentBacdrop.classList.remove('is-hidden');
   body.style.overflow = 'hidden';
