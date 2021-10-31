@@ -1,0 +1,57 @@
+.contact-info {
+  list-style: none;
+  color: grey;
+  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
+  width: 650px;
+  border-radius: 15px;
+  padding: 15px;
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+  margin: 40px 0;
+}
+.contact-item {
+  margin-top: 15px;
+}
+.gift-page {
+  color: gray;
+}
+.contact-link {
+  color: gray;
+  display: inline-block;
+  margin-top: 15px;
+}
+.gift-title {
+  //   text-align: left;
+  color: gray;
+}
+.gift-image {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: block;
+  width: 650px;
+}
+.gift-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  align-items: center;
+}
+.buy-now-button {
+  height: 50px;
+  width: 180px;
+  margin-top: 40px;
+
+  background: rgba(230, 109, 10, 0.897);
+
+  border-color: transparent;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.buy-now-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
+  color: black;
+  cursor: pointer;
+  border-color: 3px green solid;
+}
