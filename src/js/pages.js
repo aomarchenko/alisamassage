@@ -4,6 +4,7 @@ import news from '../partials/news.html';
 import aboutMe from '../partials/about-me.html';
 import video from '../partials/video.html';
 import gift from '../partials/gift-sertificate.html';
+import contact from '../partials/contact.html';
 import { opts, spinner, target } from './spinner';
 
 // import '../partials/header';
@@ -15,6 +16,7 @@ const renderContainer = document.querySelector('.content');
 const navigation = document.querySelector('.nav-list');
 const videoBtn = document.querySelector('.js-video');
 const giftbtn = document.querySelector('.js-gift-sertificate');
+const contactBtn = document.querySelector('.js-contacts');
 
 navigation.addEventListener('click', currentPageToggle);
 // const currentActivePage = document.querySelector('.nav-link.current');
@@ -25,6 +27,7 @@ priceListBtn.addEventListener('click', priceListRender);
 homeBtn.addEventListener('click', homePageRender);
 newsBtn.addEventListener('click', newsPageRender);
 aboutMeBtn.addEventListener('click', aboutMePageRender);
+contactBtn.addEventListener('click', contactPageRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
@@ -103,4 +106,7 @@ function giftPageRender(e) {
   // }
   // const buynowBtn = document.querySelector('.js-buy-now-btn');
   // buynowBtn.addEventListener('click', openModal);
+}
+function contactPageRender(e) {
+  renderContainer.innerHTML = contact;
 }
