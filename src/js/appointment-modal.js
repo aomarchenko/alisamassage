@@ -12,9 +12,14 @@ const buynowBtn = document.querySelector('.content');
 buynowBtn.addEventListener('click', openModal);
 
 function openModal(event) {
+  console.log(event.target);
   if (event.target.classList.contains('js-buy-now-btn')) {
     formTitle.textContent = 'Cadeaubon';
     formPage.textContent = 'Bedrag 15. 25. 35. 50. 100. EUR:';
+  } else {
+    formTitle.textContent = 'AFSPRAAK MAKEN';
+    formPage.textContent =
+      '? Hoe? Telefonisch, per e-mail of gebruik maken van het onderstaande contactformulier ? Wanneer? Op werkdagen tussen 10.00-21.00 uur ? Ik heb geen pin automaat, dus gelieve te betalen voor de dienst in contanten. ? Je 1e afspraak duur 15 minuten langer i.v.m. de kennismaking/intake';
   }
 
   event.preventDefault();

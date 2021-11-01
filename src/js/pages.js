@@ -4,6 +4,7 @@ import news from '../partials/news.html';
 import aboutMe from '../partials/about-me.html';
 import video from '../partials/video.html';
 import gift from '../partials/gift-sertificate.html';
+import { opts, spinner, target } from './spinner';
 
 // import '../partials/header';
 const priceListBtn = document.querySelector('.js-price-list');
@@ -60,6 +61,7 @@ function aboutMePageRender(e) {
 
   renderContainer.innerHTML = aboutMe;
 }
+
 function videoPageRender(e) {
   renderContainer.innerHTML = video;
 }
