@@ -7,12 +7,12 @@
 //   padding-left: 33px;
 // }
 // .side-menu-link {
-//   background: rgba(0, 0, 0, 0.6);
-//   //   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+//   background: $container-background;
+//   //   background: linear-gradient(to right, $container-background, rgba(0, 0, 0, 0.2));
 //   list-style: none;
 //   //   height: 40px;
 //   width: 350px;
-//   color: #ffffff;
+//   color: $white-text-color;
 //   margin-bottom: 5px;
 //   text-align: left;
 //   padding: 15px;

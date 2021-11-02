@@ -5,6 +5,7 @@ import aboutMe from '../partials/about-me.html';
 import video from '../partials/video.html';
 import gift from '../partials/gift-sertificate.html';
 import contact from '../partials/contact.html';
+import massages from '../partials/massages.html';
 import { opts, spinner, target } from './spinner';
 
 // import '../partials/header';
@@ -17,6 +18,7 @@ const navigation = document.querySelector('.nav-list');
 const videoBtn = document.querySelector('.js-video');
 const giftbtn = document.querySelector('.js-gift-sertificate');
 const contactBtn = document.querySelector('.js-contacts');
+const massagesBtn = document.querySelector('.js-massages');
 
 navigation.addEventListener('click', currentPageToggle);
 // const currentActivePage = document.querySelector('.nav-link.current');
@@ -28,6 +30,7 @@ homeBtn.addEventListener('click', homePageRender);
 newsBtn.addEventListener('click', newsPageRender);
 aboutMeBtn.addEventListener('click', aboutMePageRender);
 contactBtn.addEventListener('click', contactPageRender);
+massagesBtn.addEventListener('click', massagesPageRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
@@ -109,4 +112,7 @@ function giftPageRender(e) {
 }
 function contactPageRender(e) {
   renderContainer.innerHTML = contact;
+}
+function massagesPageRender(e) {
+  renderContainer.innerHTML = massages;
 }
