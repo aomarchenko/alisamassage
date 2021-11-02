@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   min-height: 150px;
-  background: rgba(0, 0, 0, 0.8);
+  background: $text-color;
   margin-top: 10px;
 }
 .footer-logo {
@@ -15,9 +15,9 @@
 }
 .footer-title {
   position: absolute;
-  margin-top: 105px;
-  left: calc(50% - 180px);
+  margin-top: 90px;
+  left: calc(50% - 200px);
   font-family: 'Great Vibes', cursive;
   font-size: 30px;
-  color: white;
+  color: $white-text-color;
 }

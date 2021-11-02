@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: $white-text-color;
 }
 ul {
   padding: 0;
@@ -26,17 +26,17 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: $text-color;
   height: 80px;
   width: 100%;
 
-  color: #ffffff;
+  color: $white-text-color;
   font-size: 15px;
   position: fixed;
   z-index: 99;
 }
 .nav-link:hover {
-  color: orange;
+  color: $hover-color;
 }
 
 .nav-link {
@@ -52,7 +52,7 @@ ul {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: rgba(230, 109, 10, 0.897);
+  background-color: $hover-color;
 }
 .main-nav {
   text-align: center;
@@ -60,25 +60,24 @@ ul {
 .header-button {
   position: absolute;
   right: 190px;
-  bottom: 40px;
+  bottom: 20px;
   height: 50px;
   width: 180px;
 
-  background: rgba(230, 109, 10, 0.897);
+  background: $accent-color;
 
   @media screen and (min-width: 1500px) {
     right: 655px;
   }
   border-color: transparent;
-  border-radius: 15px;
-  color: #ffffff;
+  border-radius: 50px;
+  color: $white-text-color;
   font-size: 20px;
 }
 .header-button:hover {
-  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
-  color: black;
+  box-shadow: $main-shadow;
+  color: $text-color;
   cursor: pointer;
-  border-color: 3px green solid;
 }
 .logo {
   position: absolute;
@@ -88,14 +87,23 @@ ul {
     right: 360px;
     font-size: 60px;
   }
-  font-family: 'Great Vibes', cursive;
+  font-family: $logo-font;
   font-size: 40px;
-  color: rgba(0, 0, 0, 0.8);
+  color: $text-color;
   text-align: center;
 }
 .alisa {
   display: block;
   font-size: 50px;
-  font-family: 'Great Vibes', cursive;
+  font-family: $logo-font;
   text-align: center;
+}
+
+.facebook-link {
+  width: 22px;
+  height: 22px;
+  fill: $white-text-color;
+  &:hover {
+    fill: $hover-color;
+  }
 }
