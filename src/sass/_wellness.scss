@@ -1,0 +1,12 @@
+.wellness-decoration-picture {
+  display: block;
+  margin-top: 20px;
+  //   margin-left: 160px;
+  width: 300px;
+}
+.picture-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -6,6 +6,12 @@ import video from '../partials/video.html';
 import gift from '../partials/gift-sertificate.html';
 import contact from '../partials/contact.html';
 import massages from '../partials/massages.html';
+import wellness from '../partials/wellness.html';
+import bodyEstetic from '../partials/body-estetik-massage.html';
+import gezichtsMassage from '../partials/gezichtsmassage.html';
+import spaPedicure from '../partials/spa-pedicure.html';
+import bodyDetox from '../partials/body-detox-voetenbad.html';
+import oorkaarsen from '../partials/oorkaarsen.html';
 import { opts, spinner, target } from './spinner';
 
 // import '../partials/header';
@@ -19,6 +25,12 @@ const videoBtn = document.querySelector('.js-video');
 const giftbtn = document.querySelector('.js-gift-sertificate');
 const contactBtn = document.querySelector('.js-contacts');
 const massagesBtn = document.querySelector('.js-massages');
+const wellnessBtn = document.querySelector('.js-wellness');
+const bodyEstetikBtn = document.querySelector('.js-body-estetic');
+const gezichtsMassageBtn = document.querySelector('.js-gezichtsmassage');
+const spaPedicureBtn = document.querySelector('.js-spa-pedicure');
+const bodyDetoxBtn = document.querySelector('.js-body-detox');
+const oorkaarsenBtn = document.querySelector('.js-oorkaarsen');
 
 navigation.addEventListener('click', currentPageToggle);
 // const currentActivePage = document.querySelector('.nav-link.current');
@@ -31,12 +43,18 @@ newsBtn.addEventListener('click', newsPageRender);
 aboutMeBtn.addEventListener('click', aboutMePageRender);
 contactBtn.addEventListener('click', contactPageRender);
 massagesBtn.addEventListener('click', massagesPageRender);
+wellnessBtn.addEventListener('click', wellnessPageRender);
+bodyEstetikBtn.addEventListener('click', bodyEsteticPageRender);
+gezichtsMassageBtn.addEventListener('click', gezichtsMassagePageRender);
+spaPedicureBtn.addEventListener('click', spaPedicurePageRender);
+bodyDetoxBtn.addEventListener('click', bodyDetoxPageRender);
+oorkaarsenBtn.addEventListener('click', oorkaarsenPageRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
-  if (!e.target.classList.contains('nav-link')) {
-    return;
-  }
+  // if (!e.target.classList.contains('nav-link')) {
+  //   return;
+  // }
 
   const links = document.querySelectorAll('.nav-link');
   for (const link of links) {
@@ -73,46 +91,35 @@ function videoPageRender(e) {
 }
 function giftPageRender(e) {
   renderContainer.innerHTML = gift;
-  // function openModal(event) {
-  //   event.preventDefault();
-  //   appointmentBacdrop.classList.remove('is-hidden');
-  //   body.style.overflow = 'hidden';
-  //   closeappointmentBtn.addEventListener('click', onCloseBtn);
-  //   appointmentBacdrop.addEventListener('click', onBackdrop);
-  //   //   appointmentLink.removeEventListener('click', openModal);
-  //   window.addEventListener('keydown', onEsc);
-  // }
-
-  // function closeModal() {
-  //   body.style.overflow = 'visible';
-  //   appointmentBacdrop.classList.add('is-hidden');
-
-  //   closeappointmentBtn.removeEventListener('click', onCloseBtn);
-  //   window.removeEventListener('keydown', onEsc);
-  //   appointmentBacdrop.removeEventListener('click', onBackdrop);
-  // }
-  // function onCloseBtn() {
-  //   closeModal();
-  // }
-
-  // function onBackdrop(e) {
-  //   if (!e.target.classList.contains('appointment__backdrop')) {
-  //     return;
-  //   }
-  //   closeModal();
-  // }
-
-  // function onEsc(e) {
-  //   if (e.code === 'Escape') {
-  //     closeModal();
-  //   }
-  // }
-  // const buynowBtn = document.querySelector('.js-buy-now-btn');
-  // buynowBtn.addEventListener('click', openModal);
 }
 function contactPageRender(e) {
   renderContainer.innerHTML = contact;
 }
 function massagesPageRender(e) {
   renderContainer.innerHTML = massages;
+  currentPageToggle();
+}
+function wellnessPageRender(e) {
+  renderContainer.innerHTML = wellness;
+  currentPageToggle();
+}
+function bodyEsteticPageRender(e) {
+  renderContainer.innerHTML = bodyEstetic;
+  currentPageToggle();
+}
+function gezichtsMassagePageRender(e) {
+  renderContainer.innerHTML = gezichtsMassage;
+  currentPageToggle();
+}
+function spaPedicurePageRender(e) {
+  renderContainer.innerHTML = spaPedicure;
+  currentPageToggle();
+}
+function bodyDetoxPageRender(e) {
+  renderContainer.innerHTML = bodyDetox;
+  currentPageToggle();
+}
+function oorkaarsenPageRender(e) {
+  renderContainer.innerHTML = oorkaarsen;
+  currentPageToggle();
 }
