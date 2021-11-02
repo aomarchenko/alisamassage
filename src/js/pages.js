@@ -52,9 +52,9 @@ oorkaarsenBtn.addEventListener('click', oorkaarsenPageRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
-  // if (!e.target.classList.contains('nav-link')) {
-  //   return;
-  // }
+  if (!e.target.classList.contains('nav-link')) {
+    return;
+  }
 
   const links = document.querySelectorAll('.nav-link');
   for (const link of links) {
@@ -97,29 +97,29 @@ function contactPageRender(e) {
 }
 function massagesPageRender(e) {
   renderContainer.innerHTML = massages;
-  currentPageToggle();
+  currentPageToggle(e);
 }
 function wellnessPageRender(e) {
   renderContainer.innerHTML = wellness;
-  currentPageToggle();
+  currentPageToggle(e);
 }
 function bodyEsteticPageRender(e) {
   renderContainer.innerHTML = bodyEstetic;
-  currentPageToggle();
+  currentPageToggle(e);
 }
 function gezichtsMassagePageRender(e) {
   renderContainer.innerHTML = gezichtsMassage;
-  currentPageToggle();
+  currentPageToggle(e);
 }
 function spaPedicurePageRender(e) {
   renderContainer.innerHTML = spaPedicure;
-  currentPageToggle();
+  currentPageToggle(e);
 }
 function bodyDetoxPageRender(e) {
   renderContainer.innerHTML = bodyDetox;
-  currentPageToggle();
+  currentPageToggle(e);
 }
 function oorkaarsenPageRender(e) {
   renderContainer.innerHTML = oorkaarsen;
-  currentPageToggle();
+  currentPageToggle(e);
 }
