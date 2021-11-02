@@ -8,3 +8,33 @@
 .massages-list {
   padding-top: 20px;
 }
+.front-picture {
+  border-radius: 50%;
+  // border: transparent;
+  width: 200px;
+  display: block;
+  border: white solid 5px;
+
+  background-color: white;
+}
+.massage-list-item {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 900px;
+  background: rgb(203, 172, 146);
+  justify-content: space-between;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-left: 20px;
+}
+.item-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
