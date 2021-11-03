@@ -1,0 +1,9 @@
+.price-table {
+  :nth-child(2n) {
+    color: white;
+    background-color: gray;
+  }
+  &:nth-child(1n) {
+    color: $accent-color;
+  }
+}

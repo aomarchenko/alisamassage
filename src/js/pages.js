@@ -12,6 +12,9 @@ import gezichtsMassage from '../partials/gezichtsmassage.html';
 import spaPedicure from '../partials/spa-pedicure.html';
 import bodyDetox from '../partials/body-detox-voetenbad.html';
 import oorkaarsen from '../partials/oorkaarsen.html';
+import apparaatMassage from '../partials/oog-apparaat-massage.html';
+import cosmetica from '../partials/cosmetica.html';
+import restrictions from '../partials/restrictions-for-massage.html';
 import { opts, spinner, target } from './spinner';
 
 // import '../partials/header';
@@ -31,6 +34,9 @@ const gezichtsMassageBtn = document.querySelector('.js-gezichtsmassage');
 const spaPedicureBtn = document.querySelector('.js-spa-pedicure');
 const bodyDetoxBtn = document.querySelector('.js-body-detox');
 const oorkaarsenBtn = document.querySelector('.js-oorkaarsen');
+const apparaatMassageBtn = document.querySelector('.js-apparat-massage');
+const cosmeticaBtn = document.querySelector('.js-cosmetica');
+const restrictionsBtn = document.querySelector('.js-restrictions');
 
 navigation.addEventListener('click', currentPageToggle);
 // const currentActivePage = document.querySelector('.nav-link.current');
@@ -49,6 +55,9 @@ gezichtsMassageBtn.addEventListener('click', gezichtsMassagePageRender);
 spaPedicureBtn.addEventListener('click', spaPedicurePageRender);
 bodyDetoxBtn.addEventListener('click', bodyDetoxPageRender);
 oorkaarsenBtn.addEventListener('click', oorkaarsenPageRender);
+apparaatMassageBtn.addEventListener('click', apparaatMassagePageRender);
+cosmeticaBtn.addEventListener('click', cosmeticaPageRender);
+restrictionsBtn.addEventListener('click', restrictionsPageRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
@@ -121,5 +130,17 @@ function bodyDetoxPageRender(e) {
 }
 function oorkaarsenPageRender(e) {
   renderContainer.innerHTML = oorkaarsen;
+  currentPageToggle(e);
+}
+function apparaatMassagePageRender(e) {
+  renderContainer.innerHTML = apparaatMassage;
+  currentPageToggle(e);
+}
+function cosmeticaPageRender(e) {
+  renderContainer.innerHTML = cosmetica;
+  currentPageToggle(e);
+}
+function restrictionsPageRender(e) {
+  renderContainer.innerHTML = restrictions;
   currentPageToggle(e);
 }
