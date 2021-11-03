@@ -1,8 +1,8 @@
 .contact-info {
   list-style: none;
   color: grey;
-  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
-  width: 650px;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 3px 3px;
+  width: 450px;
   border-radius: 15px;
   padding: 15px;
   border: rgba(0, 0, 0, 0.1) solid 1px;
@@ -27,13 +27,13 @@
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
   display: block;
-  width: 650px;
+  width: 450px;
 }
 .gift-container {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 650px;
+  width: 450px;
   align-items: center;
 }
 .buy-now-button {

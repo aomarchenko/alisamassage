@@ -5,7 +5,16 @@ h3 {
   opacity: 0;
   pointer-events: none;
 }
-
+.success-status-on-form {
+  color: green;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.error-status-on-form {
+  color: red;
+  font-size: 20px;
+  margin-top: 20px;
+}
 .appointment__backdrop {
   position: fixed;
   top: 0;

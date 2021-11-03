@@ -6,12 +6,14 @@ const formPage = document.querySelector('.appointment__page');
 // const appointmentLink = document.querySelector('.js-button-appointment');
 const appointmentButton = document.querySelector('.header-button');
 const appointmentForm = document.querySelector('.appointment');
+const statusPage = document.querySelector('.success-status-on-form');
 appointmentButton.addEventListener('click', openModal);
 
 const buynowBtn = document.querySelector('.content');
 buynowBtn.addEventListener('click', openModal);
 
 function openModal(event) {
+  statusPage.innerHTML = '';
   if (event.target.classList.contains('js-buy-now-btn')) {
     formTitle.textContent = 'Cadeaubon';
     formPage.textContent = 'Bedrag 15. 25. 35. 50. 100. EUR:';
@@ -71,11 +73,15 @@ async function handleSubmit(event) {
     },
   })
     .then(response => {
-      status.innerHTML = 'Thanks for your submission!';
+      status.innerHTML =
+        'Hartelijk dank voor uw e-mail.  Ik neem zo snel mogelijk contact met u op.Met vriendelijke groet Alisa.';
       form.reset();
+      setTimeout(closeModal, 5000);
     })
     .catch(error => {
-      status.innerHTML = 'Oops! There was a problem submitting your form';
+      statusPage.classList.add('error-status-on-form');
+      status.innerHTML =
+        'Oops! het is niet gelukt !Controleer of het formulier correct ingevuld is.';
     });
 }
 form.addEventListener('submit', handleSubmit);

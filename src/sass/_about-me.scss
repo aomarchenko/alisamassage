@@ -1,5 +1,5 @@
 .cv-table {
-  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 3px 3px;
   border-collapse: collapse;
   &th,
   td {
@@ -10,7 +10,9 @@
 }
 .my-photo {
   //   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px 5px;
-  border-radius: 15px;
+  // border-radius: 15px;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 .about-me-logo {
   height: 100px;
