@@ -20,7 +20,9 @@ ul {
     margin-left: 30px;
   }
   margin: 0 auto;
-  padding: 40px;
+  // padding: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -100,10 +102,14 @@ ul {
 }
 
 .facebook-link {
-  width: 22px;
-  height: 22px;
+  background-color: gray;
+  border-radius: 50%;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
   fill: $white-text-color;
   &:hover {
     fill: $hover-color;
+    background-color: white;
   }
 }
