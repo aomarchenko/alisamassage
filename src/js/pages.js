@@ -15,6 +15,7 @@ import oorkaarsen from '../partials/oorkaarsen.html';
 import apparaatMassage from '../partials/oog-apparaat-massage.html';
 import cosmetica from '../partials/cosmetica.html';
 import restrictions from '../partials/restrictions-for-massage.html';
+import feedback from '../partials/feedback.html';
 import { opts, spinner, target } from './spinner';
 
 // import '../partials/header';
@@ -37,6 +38,11 @@ const oorkaarsenBtn = document.querySelector('.js-oorkaarsen');
 const apparaatMassageBtn = document.querySelector('.js-apparat-massage');
 const cosmeticaBtn = document.querySelector('.js-cosmetica');
 const restrictionsBtn = document.querySelector('.js-restrictions');
+const feedbackBtn = document.querySelector('.js-feedback');
+const leaveFeedbackBtn = document.querySelector('.content');
+const feedbackContainer = document.querySelector('.js-feedback-container');
+const feedbackForm = document.querySelector('.content');
+const feedbackList = document.querySelector('.feedback-list');
 
 navigation.addEventListener('click', currentPageToggle);
 // const currentActivePage = document.querySelector('.nav-link.current');
@@ -58,6 +64,8 @@ oorkaarsenBtn.addEventListener('click', oorkaarsenPageRender);
 apparaatMassageBtn.addEventListener('click', apparaatMassagePageRender);
 cosmeticaBtn.addEventListener('click', cosmeticaPageRender);
 restrictionsBtn.addEventListener('click', restrictionsPageRender);
+// feedbackBtn.addEventListener('click', feedbackPageRender);
+leaveFeedbackBtn.addEventListener('click', feedbackRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
@@ -143,4 +151,18 @@ function cosmeticaPageRender(e) {
 function restrictionsPageRender(e) {
   renderContainer.innerHTML = restrictions;
   currentPageToggle(e);
+}
+function feedbackPageRender(e) {
+  renderContainer.innerHTML = feedback;
+
+  currentPageToggle(e);
+}
+const storage = [];
+function feedbackRender(e) {
+  e.preventDefault();
+  // storage.push(e.target.closest('.feedback-form').childNodes[5].value);
+  // console.log(storage);
+  // e.target.closest('.feedback-form').childNodes[1].innerHTML = storage;
+  //   e.target.closest('.feedback-form').childNodes[5].value;
+  // console.log(e.target.closest('.feedback-form').childNodes[1]);
 }
