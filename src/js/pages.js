@@ -15,7 +15,7 @@ import oorkaarsen from '../partials/oorkaarsen.html';
 import apparaatMassage from '../partials/oog-apparaat-massage.html';
 import cosmetica from '../partials/cosmetica.html';
 import restrictions from '../partials/restrictions-for-massage.html';
-import feedback from '../partials/feedback.html';
+// import feedback from '../partials/feedback.html';
 import { opts, spinner, target } from './spinner';
 
 // import '../partials/header';
@@ -38,11 +38,11 @@ const oorkaarsenBtn = document.querySelector('.js-oorkaarsen');
 const apparaatMassageBtn = document.querySelector('.js-apparat-massage');
 const cosmeticaBtn = document.querySelector('.js-cosmetica');
 const restrictionsBtn = document.querySelector('.js-restrictions');
-const feedbackBtn = document.querySelector('.js-feedback');
-const leaveFeedbackBtn = document.querySelector('.content');
-const feedbackContainer = document.querySelector('.js-feedback-container');
-const feedbackForm = document.querySelector('.content');
-const feedbackList = document.querySelector('.feedback-list');
+// const feedbackBtn = document.querySelector('.js-feedback');
+// const leaveFeedbackBtn = document.querySelector('.content');
+// const feedbackContainer = document.querySelector('.js-feedback-container');
+// const feedbackForm = document.querySelector('.content');
+// const feedbackList = document.querySelector('.feedback-list');
 
 navigation.addEventListener('click', currentPageToggle);
 // const currentActivePage = document.querySelector('.nav-link.current');
@@ -65,7 +65,7 @@ apparaatMassageBtn.addEventListener('click', apparaatMassagePageRender);
 cosmeticaBtn.addEventListener('click', cosmeticaPageRender);
 restrictionsBtn.addEventListener('click', restrictionsPageRender);
 // feedbackBtn.addEventListener('click', feedbackPageRender);
-leaveFeedbackBtn.addEventListener('click', feedbackRender);
+// leaveFeedbackBtn.addEventListener('click', feedbackRender);
 renderContainer.innerHTML = home;
 
 function currentPageToggle(e) {
@@ -77,7 +77,28 @@ function currentPageToggle(e) {
   for (const link of links) {
     link.classList.remove('current');
   }
+  const sideLinks = document.querySelectorAll('.side-menu-link');
+  for (const link of sideLinks) {
+    link.classList.remove('side-menu-link-active');
+  }
   e.target.classList.add('current');
+}
+
+function currentPageToggleSideMenu(e) {
+  if (!e.target.classList.contains('side-menu-link')) {
+    return;
+  }
+
+  const links = document.querySelectorAll('.nav-link');
+  for (const link of links) {
+    link.classList.remove('current');
+  }
+  const sideLinks = document.querySelectorAll('.side-menu-link');
+  for (const link of sideLinks) {
+    link.classList.remove('side-menu-link-active');
+  }
+  console.log(e.target);
+  e.target.classList.add('side-menu-link-active');
 }
 function priceListRender(e) {
   e.preventDefault;
@@ -114,55 +135,65 @@ function contactPageRender(e) {
 }
 function massagesPageRender(e) {
   renderContainer.innerHTML = massages;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function wellnessPageRender(e) {
   renderContainer.innerHTML = wellness;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function bodyEsteticPageRender(e) {
   renderContainer.innerHTML = bodyEstetic;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function gezichtsMassagePageRender(e) {
   renderContainer.innerHTML = gezichtsMassage;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function spaPedicurePageRender(e) {
   renderContainer.innerHTML = spaPedicure;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function bodyDetoxPageRender(e) {
   renderContainer.innerHTML = bodyDetox;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function oorkaarsenPageRender(e) {
   renderContainer.innerHTML = oorkaarsen;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function apparaatMassagePageRender(e) {
   renderContainer.innerHTML = apparaatMassage;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function cosmeticaPageRender(e) {
   renderContainer.innerHTML = cosmetica;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
 function restrictionsPageRender(e) {
   renderContainer.innerHTML = restrictions;
-  currentPageToggle(e);
+  currentPageToggleSideMenu(e);
+  window.scrollTo(0, 0);
 }
-function feedbackPageRender(e) {
-  renderContainer.innerHTML = feedback;
+// function feedbackPageRender(e) {
+//   renderContainer.innerHTML = feedback;
 
-  currentPageToggle(e);
-}
-const storage = [];
-function feedbackRender(e) {
-  e.preventDefault();
-  // storage.push(e.target.closest('.feedback-form').childNodes[5].value);
-  // console.log(storage);
-  // e.target.closest('.feedback-form').childNodes[1].innerHTML = storage;
-  //   e.target.closest('.feedback-form').childNodes[5].value;
-  // console.log(e.target.closest('.feedback-form').childNodes[1]);
-}
+//   currentPageToggleSideMenu(e);
+// }
+// const storage = [];
+// function feedbackRender(e) {
+//   e.preventDefault();
+//   // storage.push(e.target.closest('.feedback-form').childNodes[5].value);
+//   // console.log(storage);
+//   // e.target.closest('.feedback-form').childNodes[1].innerHTML = storage;
+//   //   e.target.closest('.feedback-form').childNodes[5].value;
+//   // console.log(e.target.closest('.feedback-form').childNodes[1]);
+// }
