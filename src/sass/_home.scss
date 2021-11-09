@@ -11,17 +11,32 @@
 .front-picture {
   border-radius: 50%;
   // border: transparent;
+  @media screen and (min-width: 768px) {
+    width: 100px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 100px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 200px;
+  }
   width: 200px;
   display: block;
   border: white solid 5px;
-
+  margin-left: 10px;
   background-color: white;
 }
 .massage-list-item {
+  @media screen and (min-width: 1024px) {
+    width: calc(100%-10px);
+  }
+  @media screen and (min-width: 1440px) {
+    width: 900px;
+  }
   color: white;
   font-size: 16px;
   text-transform: uppercase;
-  width: 900px;
+
   background: rgb(203, 172, 146);
   justify-content: space-between;
   border-bottom-right-radius: 200px;

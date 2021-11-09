@@ -6,7 +6,12 @@ ul {
   padding: 0;
 }
 .header {
+  @media screen and (max-width: 767.8px) {
+    background-size: cover;
+    min-height: 180px;
+  }
   background-image: url('../images/header-bg.jpeg');
+
   background-size: contain;
   width: 100%;
   margin: 0 auto;
@@ -16,32 +21,64 @@ ul {
   position: relative;
 }
 .nav-list {
-  :not(:first-child) {
-    margin-left: 30px;
-  }
-  margin: 0 auto;
-  // padding: 40px;
-  padding-top: 30px;
-  padding-bottom: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   background: $text-color;
-  height: 80px;
-  width: 100%;
+  @media screen and (max-width: 767.8px) {
+    min-height: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    :not(:first-child) {
+      margin-left: 15px;
+    }
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
-  color: $white-text-color;
-  font-size: 15px;
-  position: fixed;
-  z-index: 99;
+    height: 80px;
+    width: 100%;
+
+    color: $white-text-color;
+
+    position: fixed;
+    z-index: 99;
+  }
+  @media screen and (min-width: 1024px) {
+    :not(:first-child) {
+      margin-left: 15px;
+    }
+    padding-left: 20px;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    height: 80px;
+    width: 100%;
+
+    color: $white-text-color;
+
+    position: fixed;
+    z-index: 99;
+  }
+  @media screen and (min-width: 1440px) {
+    :not(:first-child) {
+      margin-left: 30px;
+    }
+    padding-left: 20px;
+    font-size: 20px;
+  }
 }
 .nav-link:hover {
   color: $hover-color;
 }
 
 .nav-link {
+  @media screen and (max-width: 767.8px) {
+    display: none;
+  }
   position: relative;
   padding: 0px;
 }
@@ -61,13 +98,34 @@ ul {
 }
 .header-button {
   position: absolute;
-  right: 190px;
-  bottom: 20px;
-  height: 50px;
-  width: 180px;
 
   background: $accent-color;
-
+  @media screen and (max-width: 767.8px) {
+    right: 20px;
+    bottom: 131px;
+    height: 40px;
+    width: 110px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    right: 50px;
+    bottom: 20px;
+    height: 40px;
+    width: 110px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1024px) {
+    right: 90px;
+    bottom: 20px;
+    height: 40px;
+    width: 110px;
+  }
+  @media screen and (min-width: 1440px) {
+    right: 190px;
+    bottom: 20px;
+    height: 50px;
+    width: 180px;
+  }
   @media screen and (min-width: 1500px) {
     right: 655px;
   }
@@ -76,15 +134,58 @@ ul {
   color: $white-text-color;
   font-size: 20px;
 }
+.header-button-is-animated {
+  @media screen and (min-width: 1440px) {
+    animation-name: rightToLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    @keyframes rightToLeft {
+      0% {
+        transform: translatex(600px);
+      }
+
+      100% {
+        transform: translatex(0);
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    animation-name: rightToLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    @keyframes rightToLeft {
+      0% {
+        transform: translatex(600px);
+      }
+
+      100% {
+        transform: translatex(0);
+      }
+    }
+  }
+}
 .header-button:hover {
   box-shadow: $main-shadow;
   color: $text-color;
   cursor: pointer;
 }
 .logo {
-  position: absolute;
-  bottom: 70px;
-  right: 20px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+    font-size: 30px;
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+  }
+
+  // animation: backInLeft;
+  // animation-duration: 1s;
+  // animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 1500px) {
     right: 360px;
     font-size: 60px;
@@ -93,6 +194,24 @@ ul {
   font-size: 40px;
   color: $text-color;
   text-align: center;
+}
+.logo-is-animated {
+  animation-name: move;
+
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+
+  @keyframes move {
+    0% {
+      transform: translatey(40px);
+      color: white;
+    }
+
+    100% {
+      transform: translatey(0);
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
 }
 .alisa {
   display: block;
@@ -112,4 +231,8 @@ ul {
     fill: $hover-color;
     background-color: white;
   }
+}
+.logo-container {
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
