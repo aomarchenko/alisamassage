@@ -2,11 +2,12 @@
   list-style: none;
   color: grey;
   box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 3px 3px;
-  width: 450px;
+  width: 250px;
   border-radius: 15px;
   padding: 15px;
   border: rgba(0, 0, 0, 0.1) solid 1px;
   margin: 40px 0;
+  font-size: 10px;
 }
 .contact-item {
   margin-top: 15px;
@@ -18,6 +19,10 @@
   color: $text-color;
   display: inline-block;
   margin-top: 15px;
+}
+.contact-link-first {
+  color: $text-color;
+  display: inline;
 }
 .gift-title {
   //   text-align: left;

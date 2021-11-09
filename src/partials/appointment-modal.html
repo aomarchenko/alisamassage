@@ -8,15 +8,16 @@
 
     <form class="appointment" action="https://formspree.io/f/xyylqjvj" method="POST" id="my-form">
       <h2 class="appointment__title">Afspraak maken</h2>
-      <p class="appointment__page">
-        ? Hoe? Telefonisch, per e-mail of gebruik maken van het onderstaande contactformulier <br />
+      <ul class="sub-list js-modal-list">
+        <li class="js-first-item"></li>
+        <li class="js-second-item"></li>
+        <li class="js-third-item"></li>
+        <li class="js-fourth-item"></li>
+        <li class="js-fifth-item"></li>
+        <li class="js-sixth-item"></li>
+      </ul>
 
-        ? Wanneer? Op werkdagen tussen 10.00-21.00 uur<br />
-
-        ? Ik heb geen pin automaat, dus gelieve te betalen voor de dienst in contanten.<br />
-
-        ? Je 1e afspraak duur 15 minuten langer i.v.m. de kennismaking/intake
-      </p>
+      <p class="appointment__page"></p>
       <div class="input__box">
         <h3 class="input__name">Naam:</h3>
         <input class="input__field name" name="namefield" type="text" placeholder="Naam:" />
@@ -35,12 +36,8 @@
           placeholder="email@email.com"
         />
         <h3 class="input__name">Je vraag:</h3>
-        <textarea
-          class="input__field message"
-          name="messagefield"
-          type="text"
-          placeholder="Je vraag:"
-        >
+        <h3 class="input__name js-gift-description"></h3>
+        <textarea class="input__field message" name="messagefield" type="text" placeholder="">
         </textarea>
       </div>
       <p class="success-status-on-form" id="my-form-status"></p>

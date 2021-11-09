@@ -38,6 +38,8 @@ const oorkaarsenBtn = document.querySelector('.js-oorkaarsen');
 const apparaatMassageBtn = document.querySelector('.js-apparat-massage');
 const cosmeticaBtn = document.querySelector('.js-cosmetica');
 const restrictionsBtn = document.querySelector('.js-restrictions');
+const headerLogo = document.querySelector('.js-logo');
+const headerbtn = document.querySelector('.js-header-button');
 // const feedbackBtn = document.querySelector('.js-feedback');
 // const leaveFeedbackBtn = document.querySelector('.content');
 // const feedbackContainer = document.querySelector('.js-feedback-container');
@@ -48,7 +50,7 @@ navigation.addEventListener('click', currentPageToggle);
 // const currentActivePage = document.querySelector('.nav-link.current');
 
 giftbtn.addEventListener('click', giftPageRender);
-videoBtn.addEventListener('click', videoPageRender);
+// videoBtn.addEventListener('click', videoPageRender);
 priceListBtn.addEventListener('click', priceListRender);
 homeBtn.addEventListener('click', homePageRender);
 newsBtn.addEventListener('click', newsPageRender);
@@ -100,6 +102,11 @@ function currentPageToggleSideMenu(e) {
   console.log(e.target);
   e.target.classList.add('side-menu-link-active');
 }
+function animateHeader(e) {
+  headerLogo.classList.add('logo-is-animated');
+  headerbtn.classList.add('header-button-is-animated');
+}
+animateHeader();
 function priceListRender(e) {
   e.preventDefault;
   console.log();
