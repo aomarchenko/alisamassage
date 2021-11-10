@@ -1,8 +1,8 @@
 import { addBackToTop } from 'vanilla-back-to-top';
 
 addBackToTop({
-  diameter: 60,
+  diameter: 40,
   backgroundColor: '#ddd',
   textColor: '#ff6b08',
-  cornerOffset: 60,
+  cornerOffset: 20,
 });
