@@ -13,6 +13,9 @@
   position: sticky;
   // visibility: hidden;
   // top: 100px;
+  @media screen and (max-width: 767.8px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     padding-left: 5px;
@@ -64,6 +67,11 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 .content {
+  @media screen and (max-width: 767.8px) {
+    // display: none;
+    font-size: 12px;
+    padding: 10px;
+  }
   display: block;
   font-size: 20px;
   padding: 25px;
@@ -77,6 +85,9 @@ h3 {
 li {
   margin-bottom: 20px;
   margin-left: 20px;
+  @media screen and (max-width: 767.8px) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 768px) {
     margin-left: 10px;
   }
