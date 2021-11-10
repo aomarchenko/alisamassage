@@ -40,6 +40,11 @@ const cosmeticaBtn = document.querySelector('.js-cosmetica');
 const restrictionsBtn = document.querySelector('.js-restrictions');
 const headerLogo = document.querySelector('.js-logo');
 const headerbtn = document.querySelector('.js-header-button');
+const mobileMenuBtn = document.querySelector('.js-mobile-menu-button');
+const mobMenu = document.querySelector('.js-mob-menu');
+const mobileBacdrop = document.querySelector('.mobile__backdrop');
+const closeMobileBtn = document.querySelector('.mobile__modal--btn-close');
+const body = document.querySelector('body');
 // const feedbackBtn = document.querySelector('.js-feedback');
 // const leaveFeedbackBtn = document.querySelector('.content');
 // const feedbackContainer = document.querySelector('.js-feedback-container');
@@ -66,9 +71,27 @@ oorkaarsenBtn.addEventListener('click', oorkaarsenPageRender);
 apparaatMassageBtn.addEventListener('click', apparaatMassagePageRender);
 cosmeticaBtn.addEventListener('click', cosmeticaPageRender);
 restrictionsBtn.addEventListener('click', restrictionsPageRender);
+mobileMenuBtn.addEventListener('click', mobileMenuOpen);
+// const closeMobileBtn = document.querySelector('.mobile__modal--btn-close');
 // feedbackBtn.addEventListener('click', feedbackPageRender);
 // leaveFeedbackBtn.addEventListener('click', feedbackRender);
 renderContainer.innerHTML = home;
+
+function mobileMenuOpen(e) {
+  e.preventDefault();
+  mobMenu.classList.remove('is-hidden');
+  body.style.overflow = 'hidden';
+  closeMobileBtn.addEventListener('click', onCloseBtn);
+}
+function closeModal() {
+  body.style.overflow = 'visible';
+  mobileBacdrop.classList.add('is-hidden');
+
+  closeMobileBtn.removeEventListener('click', onCloseBtn);
+}
+function onCloseBtn() {
+  closeModal();
+}
 
 function currentPageToggle(e) {
   if (!e.target.classList.contains('nav-link')) {
@@ -112,83 +135,100 @@ function priceListRender(e) {
   console.log();
 
   renderContainer.innerHTML = priceList;
+  closeModal();
 }
 function homePageRender(e) {
   e.preventDefault;
   currentPageToggle(e);
   //   homeBtn.classList.remove('current');
   renderContainer.innerHTML = home;
+  closeModal();
 }
 function newsPageRender(e) {
   e.preventDefault;
 
   renderContainer.innerHTML = news;
+  closeModal();
 }
 
 function aboutMePageRender(e) {
   e.preventDefault;
 
   renderContainer.innerHTML = aboutMe;
+  closeModal();
 }
 
 function videoPageRender(e) {
   renderContainer.innerHTML = video;
+  closeModal();
 }
 function giftPageRender(e) {
   renderContainer.innerHTML = gift;
+  closeModal();
 }
 function contactPageRender(e) {
   renderContainer.innerHTML = contact;
+  closeModal();
 }
 function massagesPageRender(e) {
   renderContainer.innerHTML = massages;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function wellnessPageRender(e) {
   renderContainer.innerHTML = wellness;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function bodyEsteticPageRender(e) {
   renderContainer.innerHTML = bodyEstetic;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function gezichtsMassagePageRender(e) {
   renderContainer.innerHTML = gezichtsMassage;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function spaPedicurePageRender(e) {
   renderContainer.innerHTML = spaPedicure;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function bodyDetoxPageRender(e) {
   renderContainer.innerHTML = bodyDetox;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function oorkaarsenPageRender(e) {
   renderContainer.innerHTML = oorkaarsen;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function apparaatMassagePageRender(e) {
   renderContainer.innerHTML = apparaatMassage;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function cosmeticaPageRender(e) {
   renderContainer.innerHTML = cosmetica;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 function restrictionsPageRender(e) {
   renderContainer.innerHTML = restrictions;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
+  closeModal();
 }
 // function feedbackPageRender(e) {
 //   renderContainer.innerHTML = feedback;
