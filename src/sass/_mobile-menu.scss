@@ -59,10 +59,12 @@
   color: $white-text-color;
   margin-bottom: 10px;
   text-align: left;
-  padding: 5px;
+  padding: 10px;
   border-radius: 15px;
 }
 .mobile-menu-button {
+  background-color: transparent;
+  border: none;
   @media screen and (min-width: 768px) {
     display: none;
   }
