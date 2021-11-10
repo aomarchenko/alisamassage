@@ -14,6 +14,12 @@
   border-radius: 50%;
 }
 .footer-title {
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    position: absolute;
+    margin-top: 90px;
+    left: calc(50% - 150px);
+  }
   position: absolute;
   margin-top: 90px;
   left: calc(50% - 200px);
