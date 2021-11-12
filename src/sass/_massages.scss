@@ -3,6 +3,9 @@
   list-style-type: none;
 }
 .gerards-logo {
+  @media screen and (max-width: 767.8px) {
+    width: 70px;
+  }
   display: inline;
 }
 .massagese-page {
