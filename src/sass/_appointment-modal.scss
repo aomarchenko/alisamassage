@@ -1,20 +1,24 @@
 h3 {
   text-align: left;
 }
+
 .appointment__backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+
 .success-status-on-form {
   color: green;
   font-size: 20px;
   margin-top: 20px;
 }
+
 .error-status-on-form {
   color: red;
   font-size: 20px;
   margin-top: 20px;
 }
+
 .appointment__backdrop {
   position: fixed;
   top: 0;
@@ -90,12 +94,14 @@ h3 {
 .dark-theme .appointment__box {
   background-color: #333333;
 }
+
 .input__box {
   margin-top: 100px;
   @media screen and (max-width: 767.8px) {
     margin-top: 10px;
   }
 }
+
 .input__field {
   @media screen and (max-width: 767.8px) {
     width: 200px;
@@ -108,6 +114,7 @@ h3 {
   font-size: 20px;
   border: 1px solid rgb(216, 213, 213);
 }
+
 .message {
   @media screen and (max-width: 767.8px) {
     width: 200px;
@@ -116,13 +123,8 @@ h3 {
   height: 100px;
   resize: none;
   padding: 10px;
-
-  //   &::placeholder {
-
-  //     position: absolute;
-  //     top: 5px;
-  //   }
 }
+
 .button__field {
   margin-top: 50px;
 }
@@ -149,6 +151,7 @@ h3 {
     cursor: pointer;
   }
 }
+
 .appointment {
   @media screen and (max-width: 767.8px) {
     width: 290px;
@@ -159,17 +162,9 @@ h3 {
   }
   padding: 15px;
   margin: 50px;
-  // width: 270px;
+
   width: 700px;
   color: $text-color;
-
-  // @media screen and (min-width: $tablet) {
-  //   width: 540px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   width: 810px;
-  // }
 }
 
 .appointment__title {

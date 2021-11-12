@@ -2,9 +2,11 @@ a {
   text-decoration: none;
   color: $white-text-color;
 }
+
 ul {
   padding: 0;
 }
+
 .header {
   @media screen and (max-width: 1023.8px) {
     background-size: cover;
@@ -20,6 +22,7 @@ ul {
   background-repeat: no-repeat;
   position: relative;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -43,12 +46,9 @@ ul {
     font-size: 12px;
     padding-top: 30px;
     padding-bottom: 20px;
-
     height: 80px;
     width: 100%;
-
     color: $white-text-color;
-
     position: fixed;
     z-index: 99;
   }
@@ -60,12 +60,9 @@ ul {
     font-size: 15px;
     padding-top: 30px;
     padding-bottom: 20px;
-
     height: 80px;
     width: 100%;
-
     color: $white-text-color;
-
     position: fixed;
     z-index: 99;
   }
@@ -77,6 +74,7 @@ ul {
     font-size: 20px;
   }
 }
+
 .nav-link:hover {
   color: $hover-color;
 }
@@ -101,12 +99,14 @@ ul {
   border-radius: 2px;
   background-color: $hover-color;
 }
+
 .main-nav {
   text-align: center;
   @media screen and (min-width: 768px) {
     margin-right: 0px;
   }
 }
+
 .header-button {
   background: $accent-color;
   margin-right: 0;
@@ -147,6 +147,7 @@ ul {
   color: $white-text-color;
   font-size: 20px;
 }
+
 .header-button-is-animated {
   @media screen and (min-width: 1440px) {
     animation-name: rightToLeft;
@@ -177,11 +178,13 @@ ul {
     }
   }
 }
+
 .header-button:hover {
   box-shadow: $main-shadow;
   color: $text-color;
   cursor: pointer;
 }
+
 .logo {
   @media screen and (max-width: 768px) {
     margin-top: 20px;
@@ -208,6 +211,7 @@ ul {
   color: $text-color;
   text-align: center;
 }
+
 .logo-is-animated {
   animation-name: move;
 
@@ -226,6 +230,7 @@ ul {
     }
   }
 }
+
 .alisa {
   display: block;
   font-size: 50px;
@@ -245,6 +250,7 @@ ul {
     background-color: white;
   }
 }
+
 .burger-menu {
   padding: 3px;
   width: 30px;
@@ -257,6 +263,7 @@ ul {
     display: none;
   }
 }
+
 .logo-container {
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

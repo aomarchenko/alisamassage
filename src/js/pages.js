@@ -15,10 +15,8 @@ import oorkaarsen from '../partials/oorkaarsen.html';
 import apparaatMassage from '../partials/oog-apparaat-massage.html';
 import cosmetica from '../partials/cosmetica.html';
 import restrictions from '../partials/restrictions-for-massage.html';
-// import feedback from '../partials/feedback.html';
 import { opts, spinner, target } from './spinner';
 
-// import '../partials/header';
 const priceListBtn = document.querySelector('.js-price-list');
 const homeBtn = document.querySelector('.js-home');
 const newsBtn = document.querySelector('.js-news');
@@ -50,7 +48,6 @@ const priceListBtnMob = document.querySelector('.js-price-list-mobile');
 const homeBtnMob = document.querySelector('.js-home-mobile');
 const newsBtnMob = document.querySelector('.js-news-mobile');
 const aboutMeBtnMob = document.querySelector('.js-about-me-mobile');
-
 const giftBtnMob = document.querySelector('.js-gift-sertificate-mobile');
 const contactBtnMob = document.querySelector('.js-contacts-mobile');
 const massagesBtnMob = document.querySelector('.js-massages-mobile');
@@ -63,14 +60,8 @@ const oorkaarsenBtnMob = document.querySelector('.js-oorkaarsen-mobile');
 const apparaatMassageBtnMob = document.querySelector('.js-apparat-massage-mobile');
 const cosmeticaBtnMob = document.querySelector('.js-cosmetica-mobile');
 const restrictionsBtnMob = document.querySelector('.js-restrictions-mobile');
-// const feedbackBtn = document.querySelector('.js-feedback');
-// const leaveFeedbackBtn = document.querySelector('.content');
-// const feedbackContainer = document.querySelector('.js-feedback-container');
-// const feedbackForm = document.querySelector('.content');
-// const feedbackList = document.querySelector('.feedback-list');
 
 navigation.addEventListener('click', currentPageToggle);
-// const currentActivePage = document.querySelector('.nav-link.current');
 
 giftbtn.addEventListener('click', giftPageRender);
 // videoBtn.addEventListener('click', videoPageRender);
@@ -107,9 +98,7 @@ oorkaarsenBtnMob.addEventListener('click', oorkaarsenPageRender);
 apparaatMassageBtnMob.addEventListener('click', apparaatMassagePageRender);
 cosmeticaBtnMob.addEventListener('click', cosmeticaPageRender);
 restrictionsBtnMob.addEventListener('click', restrictionsPageRender);
-// const closeMobileBtn = document.querySelector('.mobile__modal--btn-close');
-// feedbackBtn.addEventListener('click', feedbackPageRender);
-// leaveFeedbackBtn.addEventListener('click', feedbackRender);
+
 renderContainer.innerHTML = home;
 
 function mobileMenuOpen(e) {
@@ -132,7 +121,6 @@ function currentPageToggle(e) {
   if (!e.target.classList.contains('nav-link')) {
     return;
   }
-
   const links = document.querySelectorAll('.nav-link');
   for (const link of links) {
     link.classList.remove('current');
@@ -148,7 +136,6 @@ function currentPageToggleSideMenu(e) {
   if (!e.target.classList.contains('side-menu-link')) {
     return;
   }
-
   const links = document.querySelectorAll('.nav-link');
   for (const link of links) {
     link.classList.remove('current');
@@ -164,31 +151,29 @@ function animateHeader(e) {
   headerLogo.classList.add('logo-is-animated');
   headerbtn.classList.add('header-button-is-animated');
 }
+
 animateHeader();
 function priceListRender(e) {
   e.preventDefault;
   console.log();
-
   renderContainer.innerHTML = priceList;
   closeModal();
 }
+
 function homePageRender(e) {
   e.preventDefault;
   currentPageToggle(e);
-  //   homeBtn.classList.remove('current');
   renderContainer.innerHTML = home;
   closeModal();
 }
 function newsPageRender(e) {
   e.preventDefault;
-
   renderContainer.innerHTML = news;
   closeModal();
 }
 
 function aboutMePageRender(e) {
   e.preventDefault;
-
   renderContainer.innerHTML = aboutMe;
   closeModal();
 }
@@ -197,68 +182,80 @@ function videoPageRender(e) {
   renderContainer.innerHTML = video;
   closeModal();
 }
+
 function giftPageRender(e) {
   renderContainer.innerHTML = gift;
   closeModal();
 }
+
 function contactPageRender(e) {
   renderContainer.innerHTML = contact;
   closeModal();
 }
+
 function massagesPageRender(e) {
   renderContainer.innerHTML = massages;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function wellnessPageRender(e) {
   renderContainer.innerHTML = wellness;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function bodyEsteticPageRender(e) {
   renderContainer.innerHTML = bodyEstetic;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function gezichtsMassagePageRender(e) {
   renderContainer.innerHTML = gezichtsMassage;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function spaPedicurePageRender(e) {
   renderContainer.innerHTML = spaPedicure;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function bodyDetoxPageRender(e) {
   renderContainer.innerHTML = bodyDetox;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function oorkaarsenPageRender(e) {
   renderContainer.innerHTML = oorkaarsen;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function apparaatMassagePageRender(e) {
   renderContainer.innerHTML = apparaatMassage;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function cosmeticaPageRender(e) {
   renderContainer.innerHTML = cosmetica;
   currentPageToggleSideMenu(e);
   window.scrollTo(0, 0);
   closeModal();
 }
+
 function restrictionsPageRender(e) {
   renderContainer.innerHTML = restrictions;
   currentPageToggleSideMenu(e);

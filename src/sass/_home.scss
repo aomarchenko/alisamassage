@@ -5,12 +5,14 @@
   text-align: center;
   margin-top: 150px;
 }
+
 .massages-list {
   padding-top: 20px;
 }
+
 .front-picture {
   border-radius: 50%;
-  // border: transparent;
+
   @media screen and (max-width: 767.8px) {
     width: 70px;
   }
@@ -29,6 +31,7 @@
   margin-left: 10px;
   background-color: white;
 }
+
 .massage-list-item {
   @media screen and (max-width: 767.8px) {
     margin-top: 10px;
@@ -54,6 +57,7 @@
   align-items: center;
   padding-left: 20px;
 }
+
 .item-container {
   display: inline-flex;
   flex-direction: row;

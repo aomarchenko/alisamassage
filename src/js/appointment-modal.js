@@ -3,7 +3,6 @@ const body = document.querySelector('body');
 const closeappointmentBtn = document.querySelector('.appointment__modal--btn-close');
 const formTitle = document.querySelector('.appointment__title');
 const formPage = document.querySelector('.appointment__page');
-// const appointmentLink = document.querySelector('.js-button-appointment');
 const appointmentButton = document.querySelector('.header-button');
 const appointmentForm = document.querySelector('.appointment');
 const statusPage = document.querySelector('.success-status-on-form');
@@ -60,7 +59,6 @@ function openModal(event) {
   body.style.overflow = 'hidden';
   closeappointmentBtn.addEventListener('click', onCloseBtn);
   appointmentBacdrop.addEventListener('click', onBackdrop);
-  //   appointmentLink.removeEventListener('click', openModal);
   window.addEventListener('keydown', onEsc);
 }
 
