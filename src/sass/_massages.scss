@@ -2,31 +2,37 @@
   padding-left: 60px;
   list-style-type: none;
 }
+
 .gerards-logo {
   @media screen and (max-width: 767.8px) {
     width: 70px;
   }
   display: inline;
 }
+
 .massagese-page {
   display: inline;
   text-indent: 20px;
 }
+
 .massages-list-page-link {
   color: $text-color;
   &:hover {
     color: $hover-color;
   }
 }
+
 .massages-list-page-item {
   ::before {
     color: $hover-color;
     content: '=> ';
   }
 }
+
 .massages-text-link {
   color: $hover-color;
 }
+
 .bold-text {
   color: $accent-color;
   font-weight: 500;
@@ -34,9 +40,11 @@
   display: inline-block;
   margin-top: 20px;
 }
+
 .sub-list {
   margin: 20px;
 }
+
 .sub-list li {
   list-style: disc;
 }
