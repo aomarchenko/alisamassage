@@ -24,4 +24,4 @@ module.exports=function(t){return fetch(t).then(function(t){return t.text()})};
 },{}],0:[function(require,module,exports) {
 var b=require("TUK3");b.register("html",require("A3BY"));b.load([["price-list.e79e0073.html","dRHv"],["home.6a280f0e.html","STfV"],["news.567ce659.html","ssVt"],["about-me.a5be5d12.html","QGLI"],["video.16f1f804.html","j4hd"],["gift-sertificate.01d3800c.html","Blag"],["contact.e08d8ccc.html","ePGw"],["massages.540b8f3d.html","pmIJ"],["wellness.09df09c3.html","PxdA"],["body-estetik-massage.baebb672.html","TA7Z"],["gezichtsmassage.c2b59acf.html","aZXa"],["spa-pedicure.5a7e2740.html","WVun"],["body-detox-voetenbad.9a1ef002.html","cGTr"],["oorkaarsen.eab06e71.html","Pia6"],["oog-apparaat-massage.274ada34.html","hwQW"],["cosmetica.95676da6.html","tdlj"],["restrictions-for-massage.22f0664b.html","Y85g"]]).then(function(){require("QvaY");});
 },{}]},{},[0], null)
-//# sourceMappingURL=/alisamassage/js.598ba664.js.map
+//# sourceMappingURL=/alisamassage/js.a0449da1.js.map
