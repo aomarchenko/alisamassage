@@ -26,7 +26,7 @@ function openModal(event) {
     modalList.classList.remove('sub-list');
     formTitle.textContent = 'Cadeaubon';
     giftDescription.textContent =
-      'Ik wil een cadeaubon kopen van ( 25; 35;50;100 EUR. schrijf het gewenste bedrag op.)';
+      'Ik wil een cadeaubon kopen van ( 25;35;40;50;100 EUR. schrijf het gewenste bedrag op.)';
     formPage.textContent = '';
     firstItem.textContent = '';
     secondItem.textContent = '';
@@ -37,6 +37,7 @@ function openModal(event) {
 
     // formPage.textContent = 'Bedrag 15. 25. 35. 50. 100. EUR:';
   } else if (event.target.classList.contains('header-button')) {
+    giftDescription.textContent = '';
     formTitle.textContent = 'AFSPRAAK MAKEN';
     formPage.textContent = 'Wat kun je van mij verwachten en wat verwacht ik van jou?';
     firstItem.textContent =
